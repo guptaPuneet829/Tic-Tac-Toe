@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&family=Lugrasimo&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+    background:linear-gradient(to top left,rgb(99, 217, 238),rgb(89, 226, 196));
+}
+h1{
+    font-family: 'Lugrasimo', cursive;
+    margin-bottom: 3%;
+    font-size: 50px;
+}
+#reloadBtn{
+    margin-bottom: 3%;
+    border:12px double rgb(13, 196, 135);
+    border-radius: 50%;
+    width: 80px;
+    height:80px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+}
+#gamebox{
+    height: 360px;
+    width: 360px;
+    background-color:rgb(108, 201, 238);
+    display: flex;
+    flex-wrap: wrap;
+    border:rgb(114, 238, 161) 10px solid;
+    border-radius: 10%;
+}
+#info{
+    margin-top: 3%;
+    color:rgba(224, 23, 23, 0.801);
+    font-weight: 900;
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.square{
+    height: 120px;
+    width: 120px;
+    background-color: aliceblue;
+    border: solid 5px rgb(232, 169, 238);
+    border-radius: 20%;
+    box-sizing: border-box;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.circle{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: solid 12px green;
+}
+.cross{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    transform: rotate(45deg);
+}
+.cross:before, .cross:after{
+    content: "";
+    position: absolute;
+    background-color: red;
+}
+.cross:before{
+    left: 50%;
+    width: 15%;
+    margin-left: -10%;
+    height: 100%;
+}
+.cross:after{
+    top: 50%;
+    height: 15%;
+    margin-top: -10%;
+    width: 100%;
+}
